@@ -97,7 +97,6 @@
       color: #333;
       font-size: 0.9rem;
     }
-    /* إشعار التحميل */
     #page-alert {
       position: fixed;
       top: 10px;
@@ -112,7 +111,6 @@
       z-index: 1100;
       display: none;
     }
-    /* زر تغيير اللغة */
     #lang-switch {
       position: fixed;
       top: 15px;
@@ -140,10 +138,10 @@
   </header>
 
   <nav>
-    <button onclick="scrollToSection('tools')">أدوات الذكاء الاصطناعي</button>
-    <button onclick="scrollToSection('books')">كتب فلسفية</button>
-    <button onclick="scrollToSection('programming')">تعلم البرمجة</button>
-    <button onclick="scrollToSection('others')">روابط جذابة</button>
+    <button data-section="tools">أدوات الذكاء الاصطناعي</button>
+    <button data-section="books">كتب فلسفية</button>
+    <button data-section="programming">تعلم البرمجة</button>
+    <button data-section="others">روابط جذابة</button>
   </nav>
 
   <main>
@@ -268,10 +266,3 @@
 
   <footer>
     جميع الحقوق محفوظة © 2025 مركز الموارد الذكية
-  </footer>
-
-  <script>
-    // عرض الإشعار عند تحميل الصفحة لمدة 5 ثواني
-    window.addEventListener('load', () => {
-      const alertBox = document.getElementById('page-alert');
-      alertBox.style.display = 'block
