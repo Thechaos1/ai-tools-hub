@@ -22,15 +22,8 @@
       position: sticky;
       top: 0;
       z-index: 1001;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-    header img {
-      width: 40px;
-      vertical-align: middle;
+      font-weight: bold;
+      font-size: 1.5rem;
     }
     nav {
       background: #444;
@@ -39,7 +32,7 @@
       gap: 1rem;
       padding: 0.5rem 0;
       position: sticky;
-      top: 62px;
+      top: 56px;
       z-index: 1000;
       flex-wrap: wrap;
     }
@@ -142,11 +135,8 @@
 
   <button id="lang-switch" onclick="toggleLanguage()">English</button>
 
-  <header>
-    <h1 id="site-title">
-      مركز الموارد الذكية
-    </h1>
-    <img src="https://i.ibb.co/9WQF2pM/logo.png" alt="شعار الموقع" />
+  <header id="site-title">
+    مركز الموارد الذكية
   </header>
 
   <nav>
@@ -282,4 +272,6 @@
 
   <script>
     // عرض الإشعار عند تحميل الصفحة لمدة 5 ثواني
-    window
+    window.addEventListener('load', () => {
+      const alertBox = document.getElementById('page-alert');
+      alertBox.style.display = 'block
