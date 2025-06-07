@@ -1,176 +1,199 @@
-<!DOCTYPE html><html lang="ar">
+<!DOCTYPE html>
+<html lang="ar">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🧠 أدوات الذكاء الاصطناعي</title>
+  <title>مركز الموارد الذكية: أدوات، كتب، ودروس برمجية مجانية</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f4f4f4;
+      background: #f2f2f2;
       margin: 0;
       padding: 0;
+      scroll-behavior: smooth;
     }
     header {
       background: #2d2d2d;
       color: white;
       padding: 1rem;
       text-align: center;
-      position: relative;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    header img {
+      width: 40px;
+      vertical-align: middle;
+      margin-left: 10px;
     }
     nav {
       background: #444;
-      color: white;
       display: flex;
       justify-content: center;
-      padding: 0.5rem;
+      gap: 1rem;
+      padding: 0.5rem 0;
       position: sticky;
-      top: 0;
-      z-index: 1000;
+      top: 60px;
+      z-index: 998;
     }
-    nav a {
+    nav button {
+      background: #4caf50;
+      border: none;
+      padding: 0.5rem 1rem;
       color: white;
-      margin: 0 1rem;
-      text-decoration: none;
+      border-radius: 5px;
+      cursor: pointer;
       font-weight: bold;
+      transition: background-color 0.3s ease;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .notification {
-      background: #ffcc00;
-      color: #000;
-      padding: 1rem;
-      text-align: center;
+    nav button:hover {
+      background: #45a049;
     }
     main {
-      padding: 2rem;
-      max-width: 1000px;
+      padding: 2rem 1rem 3rem;
+      max-width: 900px;
       margin: auto;
     }
     section {
-      margin-bottom: 2rem;
-    }
-    .tool-card {
+      margin-bottom: 3rem;
       background: white;
       border-radius: 8px;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 1rem 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-    .tool-card h2 {
+    section h2 {
       margin-top: 0;
       color: #2d2d2d;
+      border-bottom: 2px solid #4caf50;
+      padding-bottom: 0.3rem;
     }
-    .tool-card p {
+    .tool-card, .book-card, .programming-card, .other-card {
+      margin-bottom: 1rem;
+      padding: 0.75rem 1rem;
+      background: #fafafa;
+      border-radius: 6px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    }
+    .tool-card h3, .book-card h3, .programming-card h3, .other-card h3 {
+      margin: 0 0 0.3rem 0;
+      color: #3a3a3a;
+    }
+    .tool-card p, .book-card p, .programming-card p, .other-card p {
+      margin: 0;
       color: #555;
     }
-    .tool-card a {
-      display: inline-block;
-      margin-top: 0.5rem;
-      padding: 0.5rem 1rem;
-      background: #4CAF50;
-      color: white;
-      border-radius: 4px;
+    a {
+      color: #4caf50;
       text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     footer {
       text-align: center;
       padding: 1rem;
       background: #e2e2e2;
       color: #333;
+      font-size: 0.9rem;
+    }
+    /* إشعار التحميل */
+    #page-alert {
+      position: fixed;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #4caf50;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+      display: none;
     }
   </style>
-  <script>
-    window.onload = function () {
-      alert("🚀 سيتم إضافة العديد من الأدوات والأشياء المختلفة هنا، ترقبوا المزيد!");
-    }
-  </script>
 </head>
 <body>
+
+  <div id="page-alert">سيتم إضافة عديد من الأدوات وأشياء مختلفة هنا في المستقبل!</div>
+
   <header>
-    <h1>🧠 أدوات الذكاء الاصطناعي المجانية</h1>
-    <p>اكتشف أفضل الأدوات الذكية لمساعدتك في الكتابة، التصميم، الصوت، الترجمة والمزيد!</p>
-  </header>  <nav>
-    <a href="#ai-tools">أدوات الذكاء الاصطناعي</a>
-    <a href="#philosophy-books">كتب فلسفية</a>
-    <a href="#other-links">روابط أخرى</a>
-  </nav>  <div class="notification">
-    ملاحظة: عند الضغط على أي أداة، يرجى تخطي الإعلانات ثم الانتظار بضع ثوانٍ حتى يتم توجيهك إلى الرابط.
-  </div>  <main>
-    <section id="ai-tools">
-      <h2>🛠️ أدوات الذكاء الاصطناعي</h2><div class="tool-card">
-    <h2>ChatGPT</h2>
-    <p>مساعد ذكي للدردشة والكتابة باستخدام الذكاء الاصطناعي.</p>
-    <a href="https://link-hub.net/1358207/9uo9mJdKfarz" target="_blank">اذهب إلى الأداة</a>
-  </div>
-  <div class="tool-card">
-    <h2>Craiyon</h2>
-    <p>مولد صور مجاني يعتمد على الذكاء الاصطناعي.</p>
-    <a href="https://link-target.net/1358207/XJvAIFoU7A2X" target="_blank">اذهب إلى الأداة</a>
-  </div>
-  <div class="tool-card">
-    <h2>ElevenLabs</h2>
-    <p>تحويل النص إلى صوت طبيعي واقعي بعدة لغات.</p>
-    <a href="https://link-target.net/1358207/P4O7PuQgJqoR" target="_blank">اذهب إلى الأداة</a>
-  </div>
-  <div class="tool-card">
-    <h2>Runway</h2>
-    <p>منصة تحرير فيديوهات احترافية بالذكاء الاصطناعي.</p>
-    <a href="https://direct-link.net/1358207/BzaXnOPc6E0P" target="_blank">اذهب إلى الأداة</a>
-  </div>
-  <div class="tool-card">
-    <h2>DeepL</h2>
-    <p>أفضل أداة ترجمة دقيقة تعتمد على الذكاء الاصطناعي.</p>
-    <a href="https://direct-link.net/1358207/oHwYrBS191ll" target="_blank">اذهب إلى الأداة</a>
-  </div>
-  <div class="tool-card">
-    <h2>GitHub Copilot</h2>
-    <p>مساعد ذكي للمبرمجين يكمل الكود تلقائيًا داخل المحررات.</p>
-    <a href="https://direct-link.net/1358207/tntGyiPpYwxU" target="_blank">اذهب إلى الأداة</a>
-  </div>
+    <h1>
+      مركز الموارد الذكية
+      <img src="https://i.ibb.co/9WQF2pM/logo.png" alt="شعار الموقع" />
+    </h1>
+    <p>أدوات، كتب فلسفية، ودروس برمجية مجانية لجميع المستويات</p>
+  </header>
 
-  <div class="tool-card">
-    <h2>Clipdrop</h2>
-    <p>إزالة الخلفية، تحسين الصور، وتحويل الصور باستخدام الذكاء الاصطناعي.</p>
-    <a href="https://clipdrop.co/" target="_blank">اذهب إلى الأداة</a>
-  </div>
-  <div class="tool-card">
-    <h2>Perplexity AI</h2>
-    <p>محرك بحث بالذكاء الاصطناعي يجيب بدقة ويستشهد بالمصادر.</p>
-    <a href="https://www.perplexity.ai/" target="_blank">اذهب إلى الأداة</a>
-  </div>
-</section>
+  <nav>
+    <button onclick="scrollToSection('tools')">أدوات الذكاء الاصطناعي</button>
+    <button onclick="scrollToSection('books')">كتب فلسفية</button>
+    <button onclick="scrollToSection('programming')">تعلم البرمجة</button>
+    <button onclick="scrollToSection('others')">روابط جذابة</button>
+  </nav>
 
-<section id="philosophy-books">
-  <h2>📚 كتب فلسفية</h2>
-  <div class="tool-card">
-    <h2>مكتبة نور - قسم الفلسفة</h2>
-    <p>أكبر مكتبة عربية تحتوي على مئات كتب الفلسفة.</p>
-    <a href="https://www.noor-book.com/tag/فلسفة" target="_blank">اذهب إلى الكتب</a>
-  </div>
-  <div class="tool-card">
-    <h2>مكتبة الشاملة</h2>
-    <p>كتب فلسفية وتراثية باللغة العربية.</p>
-    <a href="https://shamela.ws/" target="_blank">اذهب إلى الكتب</a>
-  </div>
-</section>
+  <main>
+    <section id="tools">
+      <h2>🧠 أدوات الذكاء الاصطناعي</h2>
 
-<section id="other-links">
-  <h2>🔥 روابط تجذب الجمهور</h2>
-  <div class="tool-card">
-    <h2>Remove.bg</h2>
-    <p>أداة إزالة الخلفيات من الصور مجاناً وبدقة.</p>
-    <a href="https://www.remove.bg/" target="_blank">اذهب إلى الأداة</a>
-  </div>
-  <div class="tool-card">
-    <h2>Canva</h2>
-    <p>أداة تصميم مجانية لعمل صور ومنشورات احترافية بسهولة.</p>
-    <a href="https://www.canva.com/" target="_blank">اذهب إلى الأداة</a>
-  </div>
-</section>
+      <div class="tool-card">
+        <h3>ChatGPT</h3>
+        <p>مساعد ذكي للدردشة والكتابة باستخدام الذكاء الاصطناعي.</p>
+        <a href="https://link-hub.net/1358207/9uo9mJdKfarz" target="_blank" rel="noopener noreferrer">اذهب إلى الأداة</a>
+      </div>
 
-  </main>  <footer>
-    <p>© 2025 جميع الحقوق محفوظة. تصميم Chaos1</p>
-  </footer>
-</body>
-</html>
+      <div class="tool-card">
+        <h3>Craiyon</h3>
+        <p>مولد صور مجاني يعتمد على الذكاء الاصطناعي.</p>
+        <a href="https://link-target.net/1358207/XJvAIFoU7A2X" target="_blank" rel="noopener noreferrer">اذهب إلى الأداة</a>
+      </div>
+
+      <div class="tool-card">
+        <h3>ElevenLabs</h3>
+        <p>تحويل النص إلى صوت طبيعي واقعي بعدة لغات.</p>
+        <a href="https://link-target.net/1358207/P4O7PuQgJqoR" target="_blank" rel="noopener noreferrer">اذهب إلى الأداة</a>
+      </div>
+
+      <div class="tool-card">
+        <h3>Runway</h3>
+        <p>منصة تحرير فيديوهات احترافية بالذكاء الاصطناعي.</p>
+        <a href="https://direct-link.net/1358207/BzaXnOPc6E0P" target="_blank" rel="noopener noreferrer">اذهب إلى الأداة</a>
+      </div>
+
+      <div class="tool-card">
+        <h3>DeepL</h3>
+        <p>أفضل أداة ترجمة دقيقة تعتمد على الذكاء الاصطناعي.</p>
+        <a href="https://direct-link.net/1358207/oHwYrBS191ll" target="_blank" rel="noopener noreferrer">اذهب إلى الأداة</a>
+      </div>
+
+      <div class="tool-card">
+        <h3>GitHub Copilot</h3>
+        <p>مساعد ذكي للمبرمجين يكمل الكود تلقائيًا داخل المحررات.</p>
+        <a href="https://direct-link.net/1358207/tntGyiPpYwxU" target="_blank" rel="noopener noreferrer">اذهب إلى الأداة</a>
+      </div>
+
+      <div class="tool-card">
+        <h3>Clipdrop</h3>
+        <p>أداة تحسين الصور وتحويلها بتقنيات الذكاء الاصطناعي.</p>
+        <a href="https://clipdrop.co/" target="_blank" rel="noopener noreferrer">اذهب إلى الأداة</a>
+      </div>
+
+      <div class="tool-card">
+        <h3>Perplexity AI</h3>
+        <p>محرك بحث ذكي معتمد على الذكاء الاصطناعي للإجابة على الأسئلة.</p>
+        <a href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer">اذهب إلى الأداة</a>
+      </div>
+    </section>
+
+    <section id="books">
+      <h2>📚 كتب فلسفية</h2>
+
+      <div class="book-card">
+        <h3>هكذا تكلم زرادشت - فريدريك نيتشه</h3>
+        <p>رواية فلسفية عميقة تستكشف أفكار القوة، الحياة، والمعنى.</p>
+        <a href="https://www.example.com/zarathustra" target="_blank" rel="noopener noreferrer">اقرأ الكتاب</a>
+      </div>
+
+      <div class="book-card">
+        <h3>ما وراء الخير والشر - فريدريك نيتشه</h3>
+        <p>دراسة نقدية للقيم الأخلاقية والتقال
